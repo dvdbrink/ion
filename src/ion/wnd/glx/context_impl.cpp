@@ -17,7 +17,7 @@ namespace ion { namespace wnd { namespace glx
         int nb_visuals = 0;
         XVisualInfo* visuals = XGetVisualInfo(windowHandle.display, VisualDepthMask | VisualIDMask | VisualScreenMask, &visual_info, &nb_visuals);
 
-        GLXContext temp_context = glXCreateContext(windowHandle.display, visuals, NULL, GL_FALSE);
+        GLXContext temp_context = glXCreateContext(windowHandle.display, visuals, NULL, GL_TRUE);
         glXMakeCurrent(windowHandle.display, windowHandle.window, temp_context);
         glXDestroyContext(windowHandle.display, temp_context);
 
