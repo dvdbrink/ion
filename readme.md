@@ -1,3 +1,6 @@
+## ion
+Experimental C++14 game development framework. Not suitable for production quality software in any way whatsoever.
+ 
 ### Modules
 * ion-ecs
 * ion-gfx
@@ -8,16 +11,31 @@
 * ion-sfx
 * ion-wnd
 
-### Todo
-* code: nested namespaces (clang svn only atm)
-* code: forward declarations
-* code: optimize and order includes
-* code: implement font rendering with stb true type
-* code: implement ui system
-* code: implement basic gfx agnostic api (mesh/shader)
-* code: pass opengl version etc through context constructor
-* code: fix win32 mouse motion x, y relative to window pos
-* doc: write naming conventions
-* doc: write readme
+### Tested compilers
+| OS      | Compiler    | Works |
+| ------- |:-----------:| -----:|
+| Linux   | Clang 3.7.0 | Yes   |
+| Linux   | GCC 5.2.0   | Yes   |
+| Windows | Clang 3.7.0 | No    |
+| Windows | GCC 5.2.0   | Yes   |
+| Windows | MSVC 14.0   | Yes   |
 
 ### Naming conventions
+```c++
+struct Economy
+{
+	bool has_crashed = false;
+};
+
+void crash_economy(Economy& economy)
+{
+	economy.has_crashed = true;
+}
+
+int main()
+{
+	Economy economy;
+	crash_economy(economy);
+	return economy.has_crashed;
+}
+```
