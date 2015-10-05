@@ -3,8 +3,6 @@
 #include <ion/log/out.hpp>
 #include <ion/wnd/event.hpp>
 
-#include <windows.h>
-
 namespace ion { namespace wnd { namespace win32
 {
     const std::string Win32WindowImpl::CLASS_NAME = "Win32WindowImpl";

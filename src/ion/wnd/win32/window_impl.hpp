@@ -2,8 +2,9 @@
 
 #include "../window_impl.hpp"
 
-#include <windef.h>
 #include <ion/wnd/keyboard.hpp>
+
+#include <windows.h>
 
 struct RAWINPUTDEVICE__
 {
