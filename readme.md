@@ -1,6 +1,8 @@
 ## ion
 Experimental C++14 game development framework. Not suitable for production quality software in any way whatsoever.
- 
+
+[![Build Status](https://travis-ci.org/dvdbrink/ion.svg)](https://travis-ci.org/dvdbrink/ion)
+
 ### Modules
 * ion-ecs
 * ion-gfx
