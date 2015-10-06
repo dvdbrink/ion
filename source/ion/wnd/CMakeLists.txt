@@ -1,5 +1,5 @@
 set(INC_DIR ${PROJECT_SOURCE_DIR}/include/ion/wnd)
-set(SRC_DIR ${PROJECT_SOURCE_DIR}/src/ion/wnd)
+set(SRC_DIR ${PROJECT_SOURCE_DIR}/source/ion/wnd)
 
 set(SOURCES
     ${INC_DIR}/context.hpp

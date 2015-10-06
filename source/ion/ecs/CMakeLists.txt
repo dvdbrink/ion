@@ -1,5 +1,5 @@
 set(INC_DIR ${PROJECT_SOURCE_DIR}/include/ion/ecs)
-set(SRC_DIR ${PROJECT_SOURCE_DIR}/src/ion/ecs)
+set(SRC_DIR ${PROJECT_SOURCE_DIR}/source/ion/ecs)
 
 set(SOURCES
     ${INC_DIR}/component.hpp

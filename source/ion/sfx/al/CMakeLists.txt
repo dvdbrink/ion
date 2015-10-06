@@ -2,7 +2,7 @@ set(OPENAL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include/al)
 find_package(OpenAL REQUIRED)
 
 set(INC_DIR ${PROJECT_SOURCE_DIR}/include/ion/sfx/al)
-set(SRC_DIR ${PROJECT_SOURCE_DIR}/src/ion/sfx/al)
+set(SRC_DIR ${PROJECT_SOURCE_DIR}/source/ion/sfx/al)
 
 set(SOURCES
     ${INC_DIR}/buffer.hpp

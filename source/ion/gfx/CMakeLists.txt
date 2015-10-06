@@ -1,5 +1,5 @@
 set(INC_DIR ${PROJECT_SOURCE_DIR}/include/ion/gfx)
-set(SRC_DIR ${PROJECT_SOURCE_DIR}/src/ion/gfx)
+set(SRC_DIR ${PROJECT_SOURCE_DIR}/source/ion/gfx)
 
 set(SOURCES
     ${INC_DIR}/buffer_usage.hpp
