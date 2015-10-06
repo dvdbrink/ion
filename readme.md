@@ -1,5 +1,6 @@
 ## ion
 [![Build Status](https://travis-ci.org/dvdbrink/ion.svg)](https://travis-ci.org/dvdbrink/ion)
+
 Experimental C++14 game development framework. Not suitable for production quality software in any way whatsoever.
 
 ### Modules
@@ -12,6 +13,10 @@ Experimental C++14 game development framework. Not suitable for production quali
 * ion-sfx (todo)
 * ion-sfx-al
 * ion-wnd
+
+### Dependencies
+* OpenGL >= 3.3
+* OpenAL
 
 ### Tested compilers
 | OS      | Compiler    | Works |

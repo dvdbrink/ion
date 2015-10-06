@@ -13,6 +13,7 @@ addons:
     - clang-3.7
     - gcc-5
     - g++-5
+    - libopenal1
 before_install:
   - if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.7" CC="clang-3.7"; fi
   - if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
