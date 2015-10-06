@@ -1,3 +1,5 @@
+find_package(OpenGL REQUIRED)
+
 set(INC_DIR ${PROJECT_SOURCE_DIR}/include/ion/gfx/gl)
 set(SRC_DIR ${PROJECT_SOURCE_DIR}/src/ion/gfx/gl)
 
@@ -27,3 +29,4 @@ set(SOURCES
 )
 
 add_library(ion-gfx-gl ${SOURCES})
+target_link_libraries(ion-gfx-gl ${OPENGL_gl_LIBRARY})

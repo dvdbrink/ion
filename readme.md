@@ -1,16 +1,16 @@
 ## ion
-Experimental C++14 game development framework. Not suitable for production quality software in any way whatsoever.
-
 [![Build Status](https://travis-ci.org/dvdbrink/ion.svg)](https://travis-ci.org/dvdbrink/ion)
+Experimental C++14 game development framework. Not suitable for production quality software in any way whatsoever.
 
 ### Modules
 * ion-ecs
-* ion-gfx
-* ion-gfx-d3d
+* ion-gfx (todo)
+* ion-gfx-d3d11 (todo)
 * ion-gfx-gl
 * ion-log
 * ion-math
-* ion-sfx
+* ion-sfx (todo)
+* ion-sfx-al
 * ion-wnd
 
 ### Tested compilers
@@ -41,3 +41,9 @@ int main()
 	return economy.has_crashed;
 }
 ```
+
+### Third party libraries
+
+[OpenAL Soft](http://kcat.strangesoft.net/openal.html), an LGPL-licensed, cross-platform, software implementation of the OpenAL 3D audio API.
+
+[Sean Barrett's](https://github.com/nothings/stb) public domain image loading, ogg vorbis decoding and truetype rasterization libraries.
