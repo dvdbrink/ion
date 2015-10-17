@@ -14,10 +14,6 @@ set(SOURCES
     ${SRC_DIR}/handle.hpp
     ${SRC_DIR}/window_impl.hpp
     ${SRC_DIR}/window_impl.cpp
-    ../gfx/gl/error.hpp
-    ../gfx/gl/error.cpp
-    ../gfx/gl/extensions.h
-    ../gfx/gl/extensions.c
 )
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
