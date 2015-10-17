@@ -15,8 +15,11 @@ namespace ion { namespace wnd
         Context(const WindowHandle&);
         ~Context();
 
+        void clear();
         void swap_buffers();
+
         void vertical_sync(bool);
+        void clear_color(gfx::Color);
 
     private:
         std::unique_ptr<ContextImpl> impl;

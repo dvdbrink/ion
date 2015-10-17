@@ -7,10 +7,12 @@ int main()
     bool running = true;
 
     ion::wnd::Window wnd(800, 600, "ion-gfx-example");
-    wnd.on_closed([&](const ion::wnd::Closed &) { running = false; });
+    wnd.on_closed([&](const ion::wnd::Closed&) { running = false; });
 
     auto& ctx = wnd.context();
     ctx.vertical_sync(true);
+
+    ion::gfx::clear_color(ion::gfx::Color::CornflowerBlue);
 
     ion::gfx::gl::Shader vs
     (
@@ -66,8 +68,10 @@ int main()
     {
         wnd.process_events();
 
+        ion::gfx::clear();
+
         program.use();
-        va.draw(vb, ion::gfx::PrimitiveType::Triangles, 0, vertices.size());
+        ion::gfx::gl::draw(va, vb, ion::gfx::PrimitiveType::Triangles, 0, vertices.size());
 
         ctx.swap_buffers();
     }

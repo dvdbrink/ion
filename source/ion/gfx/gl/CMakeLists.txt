@@ -2,6 +2,9 @@ set(INC_DIR ${PROJECT_SOURCE_DIR}/include/ion/gfx/gl)
 set(SRC_DIR ${PROJECT_SOURCE_DIR}/source/ion/gfx/gl)
 
 set(SOURCES
+    ${SRC_DIR}/clear.cpp
+    ${INC_DIR}/draw.hpp
+    ${SRC_DIR}/draw.cpp
     ${INC_DIR}/frame_buffer.hpp
     ${SRC_DIR}/frame_buffer.cpp
     ${SRC_DIR}/error.hpp

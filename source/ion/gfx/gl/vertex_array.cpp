@@ -30,25 +30,4 @@ namespace ion { namespace gfx { namespace gl
         check_error(glBindBuffer(GL_ARRAY_BUFFER, 0));
         check_error(glBindVertexArray(0));
     }
-
-    void VertexArray::draw(const VertexBuffer& vb, PrimitiveType mode, int first, int64_t count)
-    {
-        check_error(glBindVertexArray(id()));
-        check_error(glBindBuffer(GL_ARRAY_BUFFER, vb.id()));
-        check_error(glDrawArrays(map(mode), first, count));
-        check_error(glBindBuffer(GL_ARRAY_BUFFER, 0));
-        check_error(glBindVertexArray(0));
-    }
-
-    void VertexArray::draw(const VertexBuffer& vb, const IndexBuffer& ib, PrimitiveType mode, Type type, int count)
-    {
-        assert(type == Type::UnsignedByte || type == Type::UnsignedShort || type == Type::UnsignedInt);
-        check_error(glBindVertexArray(id()));
-        check_error(glBindBuffer(GL_ARRAY_BUFFER, vb.id()));
-        check_error(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ib.id()));
-        check_error(glDrawElements(map(mode), count, map(type), nullptr));
-        check_error(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0));
-        check_error(glBindBuffer(GL_ARRAY_BUFFER, 0));
-        check_error(glBindVertexArray(0));
-    }
 }}}

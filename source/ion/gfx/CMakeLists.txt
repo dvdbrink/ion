@@ -3,6 +3,7 @@ set(SRC_DIR ${PROJECT_SOURCE_DIR}/source/ion/gfx)
 
 set(SOURCES
     ${INC_DIR}/buffer_usage.hpp
+    ${INC_DIR}/clear.hpp
     ${INC_DIR}/color.hpp
     ${SRC_DIR}/color.cpp
     ${INC_DIR}/image.hpp
